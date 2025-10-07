@@ -1,0 +1,90 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding & border in width/height */
+}
+
+/* Body styling: center boxes with flexbox */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap; /* allow boxes to move to next line */
+  gap: 30px;       /* space between boxes */
+  justify-content: center;
+}
+
+/* Common box styles */
+.box {
+  background-color: #fff;
+  border-radius: 15px;   /* Rounded corners for all boxes */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  padding: 20px;         /* default padding */
+  color: #333;
+  text-align: center;
+}
+
+/* Box 1: fixed size and padding */
+.box1 {
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+  background-color: #ffccd5;
+  border: 3px solid #ff6f91;
+}
+
+/* Box 2: auto height, margin, dashed border */
+.box2 {
+  width: 260px;
+  margin: 25px;
+  background-color: #ffd6a5;
+  border: 4px dashed #ff9f1c;
+}
+
+/* Box 3: double border and bigger radius */
+.box3 {
+  width: 280px;
+  height: 180px;
+  background-color: #caffbf;
+  border: 5px double #2ec4b6;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+
+
+/* Box 5: responsive width and centered horizontally */
+.box5 {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;  /* top-bottom 30px, left-right auto (centered) */
+  padding: 20px 40px;
+  background-color: #bdb2ff;
+  border: 3px groove #6a4c93;
+}
+
+/* Box 6: text overflow handling and padding */
+.box6 {
+  width: 270px;
+  background-color: #f4f1de;
+  border: 2px solid #d4a373;
+  padding: 25px;
+  border-radius: 20px;
+  word-wrap: break-word;  /* long words will wrap to next line */
+}
+
+/* Headings and paragraph styles inside boxes */
+.box h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
